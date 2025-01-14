@@ -16,6 +16,7 @@ import java.util.logging.Logger;
 public class Giocosedie {
     private final static int NUMSEDIE = 15;
     private static Logger logger = Logger.getLogger("GiocoSedie.TestGiocoSedie");
+    String nomeFile;
     
     /**
      * @param args the command line arguments
@@ -53,14 +54,16 @@ public class Giocosedie {
             br.write("\n\r");
             br.flush();         
         } catch (IOException ex) {
-            Logger.getLogger(Scrittore.class.getName()).log(Level.SEVERE, null, ex);
+            System.err.println("Stamap l'id della classe");
         }
         finally{
             if (br!=null)
                 try {
                     br.close();
             } catch (IOException ex) {
-                Logger.getLogger(Scrittore.class.getName()).log(Level.SEVERE, null, ex);
+                System.err.println("Stampa");
             }
         }
+    }
+}
  
