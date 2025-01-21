@@ -7,7 +7,7 @@ package giocosedie;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.logging.Level;
+import java.util.Scanner;
 import java.util.logging.Logger;
 /**
  *
@@ -23,7 +23,7 @@ public class Giocosedie {
      */
     public static void main(String[] args) {
         Posto sedie[] = new Posto[NUMSEDIE];
-
+        Scanner scanner = new Scanner(System.in);
 	for (int k = 0; k < sedie.length; k++)
 		sedie[k] = new Posto();
 
@@ -54,7 +54,7 @@ public class Giocosedie {
             br.write("\n\r");
             br.flush();         
         } catch (IOException ex) {
-            System.err.println("Stamap l'id della classe");
+            System.err.println("Stampa l'id della classe");
         }
         finally{
             if (br!=null)

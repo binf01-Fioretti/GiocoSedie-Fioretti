@@ -26,7 +26,7 @@ class Display extends Thread
 				int count = 0;
 
 				sleep((int) (Math.random() * 250));
-
+ 
 				for (int i = 0; i < sedie.length; i++) {
 				
 					if (sedie[i].libero())
